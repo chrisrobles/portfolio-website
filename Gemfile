@@ -1,7 +1,11 @@
+# https://pages.github.com/versions/
+
 source "https://rubygems.org"
 
-gem "jekyll", "~> 3.2.1"
-gem "jekyll-sitemap"
-gem "jekyll-gist"
-gem 'jekyll-mentions'
-gem 'jekyll-feed'
+gem "jekyll"
+gem "webrick"
+gem "jekyll-sitemap", "~> 1.4.0"
+gem "jekyll-gist", "~> 1.5.0"
+gem 'jekyll-mentions', "~> 1.6.0"
+gem 'jekyll-feed', "~> 0.15.1"
+gem "github-pages", "~> 228"
