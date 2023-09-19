@@ -1,9 +1,9 @@
 # Site
 title:              ChrisRobles.dev
-bio:                'My personal website.'
-description:        "Learn something here."
-reading_time:       true
-words_per_minute:   200
+bio:                'You are not defeated until you give up the fight.'
+description:        "My Personal Website"
+reading_time:       false
+#words_per_minute:   200
 logo:               'assets/img/logo.png'
 background:         'assets/img/background.png'
 tiled_bg:           false   # Set this true if you want to tile your background image, otherwise it will be covered
@@ -68,6 +68,7 @@ gems:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-gist
+  - jekyll-avatar
 
 jekyll-mentions:
     base_url: https://github.com

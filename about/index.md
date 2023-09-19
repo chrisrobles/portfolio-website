@@ -10,35 +10,6 @@ comments: false
 <p>Hello World, I'm Christian Robles!</p>
 </center>
 
-## Features
-
-* Minimal, you can focus on your content
-* Responsive
-* Disqus integration
-* Syntax highlighting
-* Optional post image
-* Social icons
-* Page for sharing projects
-* Optional background image
-* Simple navigation menu
-* MathJax support
-
-## Preview
-
-{% capture images %}
-    https://cloud.githubusercontent.com/assets/754514/14509720/61c61058-01d6-11e6-93ab-0918515ecd56.png
-    https://cloud.githubusercontent.com/assets/754514/14509716/61ac6c8e-01d6-11e6-879f-8308883de790.png
-{% endcapture %}
-{% include gallery images=images caption="Screenshots of Moon Theme" cols=2 %}
-
-See a [live version of Moon](http://taylantatli.github.io/Moon) hosted on GitHub.
-
-## Getting Started
-
-To learn how to install and use this theme check out the [Setup Guide](http://taylantatli.me/Moon/moon-theme/) for more information.
-      
-[Install Moon](https://github.com/TaylanTatli/Moon){: .btn}
-
 ## About Me
 
 ## Intro to myself
@@ -59,7 +30,7 @@ I'm also learning Python 3 to practice them in.
 
 I plan on uploading my **cheatsheets** there.
 
-I'm aspiring to be a better programmer by learning more about programming languages and concepts. While I learn, I like creating cheatsheets to help me fully understand something and to reference in the future. I grab information that I find useful from multiple sources including official documentation. I don't plan on making them perfect or to teach someone not familiar with the language/concept everything they need to know, but more of a quick refence and some notes on trickier subjects.
+I'm aspiring to be a better programmer by learning more about programming languages and concepts. While I learn, I like creating cheatsheets to help me fully understand something and to reference in the future. I grab information that I find useful from multiple sources including official documentation. I don't plan on making them perfect or to teach someone not familiar with the language/concept everything they need to know, but more of a quick reference and some notes on trickier subjects.
 
 I hope uploading them will help somebody! Please feel free to submit pull requests to fix them up / add to them!
 

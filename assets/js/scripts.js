@@ -7,6 +7,11 @@ $(function() {
 // Need this to show animation when go back in browser
 window.onunload = function() {};
 
+// Need this to still show content even when backspace is hit
+$(window).on('pageshow', function(){
+  $(".container").removeClass("fadeOut").addClass("fadeIn");
+  $(".wrapper").removeClass("fadeOut").addClass("fadeIn");
+});
 // Add lightbox class to all image links
 $("a[href$='.jpg'],a[href$='.jpeg'],a[href$='.JPG'],a[href$='.png'],a[href$='.gif']").addClass("image-popup");
 
@@ -17,6 +22,7 @@ $(function() {
 
 // All others
 $(document).ready(function() {
+  console.log('console log works lol');
     // zoom in/zoom out animations
     if ($(".container").hasClass('fadeOut')) {
         $(".container").removeClass("fadeOut").addClass("fadeIn");
@@ -27,6 +33,7 @@ $(document).ready(function() {
     $(".zoombtn").click(function() {
         $(".container").removeClass("fadeIn").addClass("fadeOut");
         $(".wrapper").removeClass("fadeIn").addClass("fadeOut");
+        console.log("fade out triggered");
     });
     // go up button
     $.goup({
