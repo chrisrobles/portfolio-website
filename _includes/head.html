@@ -78,7 +78,7 @@
                 {{ site.url }}/{{ background }}
             {% endcapture %}
         {% endunless %}
-    <style type="text/css">body {background-image:url({{ background }}); {% unless site.tiled_bg %} background-repeat: no-repeat; background-size: cover; {% endunless %}}</style>
+    <style type="text/css">body {background-image:url({{ background }}); {% unless site.tiled_bg %} background-repeat: no-repeat; background-size: cover; background-attachment:fixed; {% endunless %}}</style>
     {% endif %}
     <!-- Post Feature Image -->
     {% if page.feature %}
