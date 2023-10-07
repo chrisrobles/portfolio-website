@@ -20,7 +20,23 @@ $("a[href$='.jpg'],a[href$='.jpeg'],a[href$='.JPG'],a[href$='.png'],a[href$='.gi
 $(function() {
     $(".content").fitVids();
 });
+async function setQuote(prev = 0){
+    try{
+        const response = await fetch('assets/text/quotes.txt');
+        const text = await response.text();
 
+        const quotes = text.split('\n');
+        let num = 0;
+        do{
+            num = Math.floor(Math.random() * (quotes.length - 0)) + 0;
+        } while(num == 7);
+        $('.quote').html(quotes[8]);
+        return num;
+    } catch(error) {
+        console.error('There was a problem with fetching quotes:', error);
+        return null;
+    }
+}
 // All others
 $(document).ready(function() {
     console.log('console log works lol');
@@ -51,6 +67,14 @@ $(document).ready(function() {
             }, 800); // 2000ms (2 seconds) matches the animation duration
         }
     });
+    //random quote
+    setQuote()
+        .then(num => {
+            if(num >= 0)
+                console.log("the num is " + num);
+            else
+                console.log("no num")
+        });
     // go up button
     $.goup({
         trigger: 500,
@@ -62,19 +86,19 @@ $(document).ready(function() {
         goupSpeed: 'normal'
     });
     $('.image-popup').magnificPopup({
-    type: 'image',
-    tLoading: 'Loading image #%curr%...',
-    gallery: {
-        enabled: true,
-        navigateByImgClick: true,
-        preload: [0,1] // Will preload 0 - before current, and 1 after the current image
-    },
-    image: {
-        tError: '<a href="%url%">Image #%curr%</a> could not be loaded.',
-    },
-    removalDelay: 300, // Delay in milliseconds before popup is removed
-    // Class that is added to body when popup is open. 
-    // make it unique to apply your CSS animations just to this exact popup
-    mainClass: 'mfp-fade'
-  });
+        type: 'image',
+        tLoading: 'Loading image #%curr%...',
+        gallery: {
+            enabled: true,
+            navigateByImgClick: true,
+            preload: [0,1] // Will preload 0 - before current, and 1 after the current image
+        },
+        image: {
+            tError: '<a href="%url%">Image #%curr%</a> could not be loaded.',
+        },
+        removalDelay: 300, // Delay in milliseconds before popup is removed
+        // Class that is added to body when popup is open. 
+        // make it unique to apply your CSS animations just to this exact popup
+        mainClass: 'mfp-fade'
+    });
 });
