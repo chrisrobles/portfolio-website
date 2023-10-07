@@ -30,7 +30,7 @@ async function setQuote(prev = 0){
         do{
             num = Math.floor(Math.random() * (quotes.length - 0)) + 0;
         } while(num == 7);
-        $('.quote').html(quotes[8]);
+        $('.quote').html(quotes[num]);
         return num;
     } catch(error) {
         console.error('There was a problem with fetching quotes:', error);
