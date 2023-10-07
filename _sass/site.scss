@@ -26,12 +26,11 @@ body {
 		//margin: auto;
 		overflow-y: auto;
 		//.social-btn{ padding: 0px;}
-		.container{
+		/*.container{ put this in the .container { @media#{small}{ } } section
 			//height: 100%; 
 			margin: auto;
 			width: 80%;
-			color: red;
-		}
+		}*/
 	}
 }
 * {
@@ -51,10 +50,10 @@ body {
 	text-align: left;
 	color: $white;
 	@media #{$small} {
-		//display: block !important; moves the mobile container to top of page
+		//display: block !important; //moves the mobile container to top of page
 	}
 	@media only screen and (max-height: 500px) {
-	    display: block !important;
+	    display: flex !important;
 	}
 }
 .flex {
@@ -94,6 +93,9 @@ body {
 	@media #{$small} {
 		//width: 100%;
 	    box-shadow: none;
+		//height: 100%; 
+		//margin: auto;
+		width: 80%;
 	}
 	@media #{$medium} {
 		width: 80%;
@@ -230,4 +232,11 @@ header .entry-meta {
         background-blend-mode: multiply;
         background-position: center center;
     }
+}
+.quote{
+	max-width:90%;
+	margin:auto;
+	@media#{$small}{
+		max-width: 85%;
+	}
 }

@@ -29,7 +29,7 @@ async function setQuote(prev = 0){
         let num = 0;
         do{
             num = Math.floor(Math.random() * (quotes.length - 0)) + 0;
-        } while(num == 7);
+        } while(num == 6 || num == 7);
         $('.quote').html(quotes[num]);
         return num;
     } catch(error) {
