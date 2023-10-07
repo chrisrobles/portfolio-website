@@ -24,6 +24,9 @@ $(function() {
 // All others
 $(document).ready(function() {
     console.log('console log works lol');
+
+    $('.avatar').css('border-radius', '50%');
+
     // zoom in/zoom out animations
     if ($(".container").hasClass('fadeOut')) {
         $(".container").removeClass("fadeOut").addClass("fadeIn");
@@ -34,7 +37,19 @@ $(document).ready(function() {
     $(".zoombtn").click(function() {
         $(".container").removeClass("fadeIn").addClass("fadeOut");
         $(".wrapper").removeClass("fadeIn").addClass("fadeOut");
-        console.log("fade out triggered");
+    });
+    //make avatar 360 on click
+    let isSpinning = false
+    $('.avatar').click(function() {
+        if(!isSpinning){
+            isSpinning = true;
+            $('.avatarContainer').removeClass('rotateIn');
+            $('.avatarContainer').addClass('rotate360');
+            setTimeout(function() {
+                isSpinning = false;
+                $('.avatarContainer').removeClass('rotate360');
+            }, 800); // 2000ms (2 seconds) matches the animation duration
+        }
     });
     // go up button
     $.goup({

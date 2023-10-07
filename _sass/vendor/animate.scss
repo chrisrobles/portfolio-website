@@ -232,3 +232,44 @@
   -webkit-animation-name: rotateIn;
   animation-name: rotateIn;
 }
+
+@-webkit-keyframes rotate360 {
+  from {
+    -webkit-transform-origin: center;
+    transform-origin: center;
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    opacity: 1;
+  }
+
+  to {
+    -webkit-transform-origin: center;
+    transform-origin: center;
+    -webkit-transform: rotate(-365deg);
+    transform: rotate(-365deg);
+    opacity: 1;
+  }
+}
+
+@keyframes rotate360 {
+  from {
+    -webkit-transform-origin: center;
+    transform-origin: center;
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    opacity: 1;
+  }
+
+  to {
+    -webkit-transform-origin: center;
+    transform-origin: center;
+    -webkit-transform: rotate(-365deg);
+    transform: rotate(-365deg);
+    opacity: 1;
+  }
+}
+
+.rotate360 {
+  -webkit-animation-name: rotate360;
+  animation-name: rotate360;
+}
