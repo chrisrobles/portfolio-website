@@ -1,10 +1,11 @@
 ---
 layout: page
 title: About Me
-tags: [about, biography, introduction]
+tags: [about, biography]
 date: 2023-09-11
 comments: false
 ---
+[Resume](/assets/files/resume.pdf)
 
 ## Intro to Myself
 
@@ -26,24 +27,7 @@ As a full-stack developer, I taught myself the **LAMP stack** (**Linux**, **Apac
 - a Fleet Tracking Service that communicated with the vehicles' GPS through an API
 - an Auto Clock In feature for field techs based off the data from the fleet tracking service and their scheduled jobs
 
+## What Now
+
 Now that I have graduated, I finally have more time to pursue [personal projects](/projects/) and follow my curiosity.
 
-## GitHub
-
-I plan on uploading my **cheatsheets** there.
-
-I'm aspiring to be a better programmer by learning more about programming languages and concepts. While I learn, I like creating cheatsheets to help me fully understand something and to reference in the future. I grab information that I find useful from multiple sources including official documentation. I don't plan on making them perfect or to teach someone not familiar with the language/concept everything they need to know, but more of a quick reference and some notes on trickier subjects.
-
-I hope uploading them will help somebody! Please feel free to submit pull requests to fix them up / add to them!
-
-### My Cheatsheets
-
-1. [GitHub](https://github.com/chrisrobles/github-cheatsheet)
-2. [Markdown](https://github.com/chrisrobles/markdown-cheatsheet)
-3. [Git](https://github.com/chrisrobles/git-cheatsheet)
-
-## other
-
-Although I took a course on Data Structures and Algorithms, I feel like I did not get a good sense on how to apply them. So, I'm going over each concept slowly to fully understand their use cases and weaknesses.
-
-I'm also learning Python 3 to practice them in.
