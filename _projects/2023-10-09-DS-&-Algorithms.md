@@ -11,3 +11,5 @@ comments: false
 Although I took a course on Data Structures and Algorithms, I feel like I did not get a good sense on how to apply them. So, I'm going over each concept slowly to fully understand their use cases and weaknesses.
 
 I'm also learning Python 3 to practice them in.
+
+[Link](https://github.com/chrisrobles/python3-cheatsheet)
