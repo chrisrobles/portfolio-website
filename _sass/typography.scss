@@ -48,17 +48,18 @@ h3.title a {
 		padding: 10px 18px;
 		margin: 0 10px;
 		text-decoration: none;
-		background: $white;
-		color: $color_shark;
+		background: #29292b;
+		color: $white;
 		a {
 			@include font-rem(20);
 			text-decoration: none;
-			color: $color_shark;
+			color: $red;
 			font-weight: bolder;
             &:hover {
                 color: $red;
             }
 		}
+
 		p {
 			font-weight: lighter;
 			@include font-rem(16);
@@ -104,6 +105,15 @@ a {
   	transition: color .3s;
   	color: $maroon;
   }
+}
+a.btn {
+	color: #1F1F20;
+	&:visited {
+		color: #1F1F20;
+	}
+	&:hover {
+		color: $red;
+	}
 }
 
 // pre and code
