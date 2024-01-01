@@ -121,6 +121,7 @@ body {
 	padding: 2em;
 	border-radius: 3px;
 	box-shadow: 0 0 10px 0 rgba($color_shark,0.3);
+	overflow-y: scroll;
 	@include transition(.5s);
 	@media #{$small} {
 		width: 90%;
