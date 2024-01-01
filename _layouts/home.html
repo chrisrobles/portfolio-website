@@ -48,5 +48,27 @@ layout: compress
         </div>
     </header>
     {% include scripts.html %}
+    <script defer>
+        async function setQuote(prev = 0){
+            try{
+                const response = await fetch('assets/text/quotes.txt');
+                const text = await response.text();
+        
+                const quotes = text.split('\n');
+                let num = 0;
+                do{
+                    num = Math.floor(Math.random() * (quotes.length - 0)) + 0;
+                } while(num == 6 || num == 7);
+                $('.quote').html(quotes[num]);
+                return num;
+            } catch(error) {
+                console.error('There was a problem with fetching quotes:', error);
+                return null;
+            }
+        }
+        $(document).ready(function() {
+            setQuote();
+        });
+    </script>
 </body>
 </html>

@@ -20,27 +20,9 @@ $("a[href$='.jpg'],a[href$='.jpeg'],a[href$='.JPG'],a[href$='.png'],a[href$='.gi
 $(function() {
     $(".content").fitVids();
 });
-async function setQuote(prev = 0){
-    try{
-        const response = await fetch('assets/text/quotes.txt');
-        const text = await response.text();
 
-        const quotes = text.split('\n');
-        let num = 0;
-        do{
-            num = Math.floor(Math.random() * (quotes.length - 0)) + 0;
-        } while(num == 6 || num == 7);
-        $('.quote').html(quotes[num]);
-        return num;
-    } catch(error) {
-        console.error('There was a problem with fetching quotes:', error);
-        return null;
-    }
-}
 // All others
 $(document).ready(function() {
-    console.log('console log works lol');
-
     $('.avatar').css('border-radius', '50%');
 
     // zoom in/zoom out animations
@@ -67,14 +49,6 @@ $(document).ready(function() {
             }, 800); // 2000ms (2 seconds) matches the animation duration
         }
     });
-    //random quote
-    setQuote()
-        .then(num => {
-            if(num >= 0)
-                console.log("the num is " + num);
-            else
-                console.log("no num")
-        });
     // go up button
     $.goup({
         trigger: 500,
