@@ -1,5 +1,7 @@
 # Site
-title:              ChrisRobles.dev
+title:              'ChrisRobles.dev'
+author:             'Chris Robles'
+position:           'Software Engineer'
 bio:                'You are not defeated until you give up the fight.'
 description:        "My Personal Website"
 reading_time:       false

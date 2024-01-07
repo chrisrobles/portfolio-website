@@ -7,6 +7,8 @@
 
 # Jekyll
 
+`bundle exec jekyll serve`
+
 Page
 - standalone content w/o date
 - ex. about.md `SITE-URL/about`
