@@ -33,8 +33,8 @@ $(document).ready(function() {
         $(".wrapper").removeClass("fadeOut").addClass("fadeIn");
     }
     $(".zoombtn").click(function() {
-        $(".container").removeClass("fadeIn").addClass("fadeOut");
-        $(".wrapper").removeClass("fadeIn").addClass("fadeOut");
+        //$(".container").removeClass("fadeIn").addClass("fadeOut");
+        //$(".wrapper").removeClass("fadeIn").addClass("fadeOut");
     });
     //make avatar 360 on click
     let isSpinning = false
